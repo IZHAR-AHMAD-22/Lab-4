@@ -31,12 +31,7 @@ crud/
 └── README.md     # This file
 ```
 
-## Database Setup
-
-1. Open **Laragon** and start Apache and MySQL.
-2. Open **HeidiSQL** (or phpMyAdmin) from Laragon.
-3. Connect to `Laragon.MySQL`.
-4. Open a query tab and run:
+## Database
 
 ```sql
 CREATE DATABASE php_crud_db;
