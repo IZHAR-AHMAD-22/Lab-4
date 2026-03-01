@@ -50,35 +50,4 @@ CREATE TABLE IF NOT EXISTS users (
     city VARCHAR(100)
 );
 ```
-
-## Installation
-
-1. Copy the `crud/` folder into `C:\laragon\www\`.
-2. Start Laragon (Apache + MySQL).
-3. Visit: `http://localhost/crud/INDEX.php`
-
-## Changes & Updates
-
-### ✅ Issues Fixed
-
-| Issue | Fix Applied |
-|-------|-------------|
-| City showing `0` on update | Corrected `bind_param` types in `EDIT.php` (`"sssisi"`) |
-| ID gap after delete | Added resequencing queries in `DELETE.php` |
-| `AUTO_INCREMENT` jumping | Reset with `ALTER TABLE users AUTO_INCREMENT = 1` |
-| Table already exists error | Used `CREATE TABLE IF NOT EXISTS` |
-
-### 🔧 Features Added
-
-- Actions column with Edit & Delete buttons in `VIEW.php`
-- Success alerts after record add/update/delete
-- City field included in form, table, and database
-- ID resequencing after delete to remove gaps
-
-## Video Tutorial
-
-🎬 [https://www.loom.com/share/1a9f0b940ace40b4be58684e8dacdf4f](https://www.loom.com/share/1a9f0b940ace40b4be58684e8dacdf4f)
-
----
-
 *Made with ❤️ by **Izhar Ahmad***
